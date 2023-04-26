@@ -80,8 +80,7 @@ int env_match(char *input)
 	int count = 0, count_two = 0;
 
 	peter = enviornment; /*setting enviornment*/
-	while (peter)
-	{
+
 		count = 0;
 		while (input[count] == peter->ptr[count])
 		{
@@ -93,6 +92,6 @@ int env_match(char *input)
 		peter = peter->next;
 		if (peter == NULL)
 			return (-1);
-	}
+
 	return (count_two);
 }
