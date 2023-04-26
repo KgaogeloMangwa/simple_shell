@@ -2,7 +2,7 @@
 /**
  * path_check - finds correct path based on input
  * @head: head of the path list
- * @input: arguments passed
+ * @line: arguments passed
  * Return: NULL if not matched
 */
 
@@ -50,7 +50,7 @@ char *path_cat(char *s1, char *s2)
 	if (together == NULL)
 		return (NULL);
 	for (count1 = 0; s1[count1]; count1++)
-		together[count1] = s2[count1];
+		together[count1] = s1[count1];
 
 	together[count1] = '/';
 	count1++;
