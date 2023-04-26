@@ -20,7 +20,7 @@ typedef struct path
 {
 	char *ptr;
 	struct path *next;
-}path_t;
+} path_t;
 
 /* entry point */
 int main(int argc, char **argv);
