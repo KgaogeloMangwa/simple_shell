@@ -20,7 +20,7 @@ typedef struct path
 {
 	char *ptr;
 	struct path *next;
-} path_t;
+}path_t;
 
 /* entry point */
 int main(int argc, char **argv);
@@ -41,7 +41,7 @@ int isit_built(char **args, char *input);
 void shell_exit(char **args, char *input);
 void print_enviornment(void);
 
-/* enviornment funcitons */
+/* environment functions */
 path_t *_env(void);
 char *env_find(char *var);
 int env_match(char *input);
